@@ -1,19 +1,21 @@
-import type { Config } from "tailwindcss";
+const defaultTheme = require('tailwindcss/defaultTheme');
 
-const config: Config = {
+module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    './src/**/*.{html,js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        comfortaa: ['Comfortaa', 'sans-serif'],
+        lora: ['Lora', 'serif'],
+        libre: ['Libre Baskerville', 'serif'],
+        monte: ['Montserrat', 'sans-serif']
       },
     },
   },
   plugins: [],
 };
-export default config;

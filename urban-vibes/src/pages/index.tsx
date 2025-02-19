@@ -17,7 +17,6 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <h1 className="text-xl font-bold">Welcome to Urban Vibes!</h1>
     </>
   );
 }
