@@ -1,6 +1,7 @@
 import Image from "next/image";
 import localFont from "next/font/local";
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,9 +15,5 @@ const geistMono = localFont({
 });
 
 export default function Home() {
-  return (
-    <>
-      <Navbar />
-    </>
-  );
+  return null;
 }

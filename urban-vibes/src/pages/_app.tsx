@@ -1,3 +1,5 @@
+import Footer from "@/components/footer/Footer";
+import Navbar from "@/components/navbar/Navbar";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { Lora, Comfortaa, Nunito } from 'next/font/google';
@@ -9,8 +11,13 @@ const nunito = Nunito({ subsets: ['latin'], weight: ['400', '700'] });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${comfortaa.className} ${nunito.className} ${lora.className}`}>
-      <Component {...pageProps} />
-    </main>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className={`${comfortaa.className} ${nunito.className} ${lora.className} bg-red-400`}>
+        <Component {...pageProps} />
+        
+      </main>
+      <Footer />
+    </div>
   )
 }
