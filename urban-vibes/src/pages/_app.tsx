@@ -8,16 +8,14 @@ const lora = Lora({ subsets: ['latin'], weight: ['400', '700'] });
 const comfortaa = Comfortaa({ subsets: ['latin'], weight: ['400', '700'] });
 const nunito = Nunito({ subsets: ['latin'], weight: ['400', '700'] });
 
-
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className={`${comfortaa.className} ${nunito.className} ${lora.className} min-h-screen flex flex-col`}>
       <Navbar />
-      <main className={`${comfortaa.className} ${nunito.className} ${lora.className} bg-red-400`}>
+      <main className="bg-blue-400">
         <Component {...pageProps} />
-        
       </main>
       <Footer />
     </div>
-  )
+  );
 }
