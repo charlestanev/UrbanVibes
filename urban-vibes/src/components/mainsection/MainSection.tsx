@@ -10,8 +10,8 @@ const MainContent = () => {
             <div className="absolute inset-0 bg-black/50"></div>
             <div className="absolute inset-0 flex justify-center items-center text-white text-3xl">
                 <div className="flex min-h-full items-center justify-center">
-                    <div>
-                        <div className="text-white text-center mb-4">
+                    <div className="space-y-6">
+                        <div className="text-white text-center">
                             <p className="text-4xl capitalize font-bold mb-4">
                                 Discover places that people love
                             </p>
@@ -38,14 +38,17 @@ const MainContent = () => {
                             <div>
                                 <Button
                                     label="Search"
-                                    className="text-lg  py-2.5 px-6"
+                                    className="text-lg py-3.5 px-6"
                                     variant="solid"
-                                />
+                                    icon="search"
+                                    iconPosition="left"
+                                >
+                                </Button>
                             </div>
                         </div>
 
                         <div>
-                            <ul className="flex justify-center gap-5 text-sm text-white">
+                            <ul className="flex justify-center gap-5 text-sm text-white mb-5">
                                 <li className="capitalize">
                                     <Link href="/" className="hover:text-amber-500 flex items-center gap-1">
                                         <span className="material-icons align-middle hidden md:inline-flex">restaurant</span>
