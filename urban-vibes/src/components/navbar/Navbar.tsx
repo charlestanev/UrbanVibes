@@ -10,7 +10,7 @@ const Navbar = () => {
             <div>
                 <Button label="Add Listing" />
             </div>
-            <div className='space-x-4'>
+            <div className='space-x-4 flex'>
                 <Button
                     label="Sign In"
                     className="text-lg"
