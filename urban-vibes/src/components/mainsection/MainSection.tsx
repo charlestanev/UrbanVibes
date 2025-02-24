@@ -45,9 +45,42 @@ const MainContent = () => {
                         </div>
 
                         <div>
-                            <ul>
-                                <li>
-                                    <span className="material-icons align-middle hidden md:inline-flex">restaurant_menu</span>
+                            <ul className="flex justify-center gap-5 text-sm text-white">
+                                <li className="capitalize">
+                                    <Link href="/" className="hover:text-amber-500 flex items-center gap-1">
+                                        <span className="material-icons align-middle hidden md:inline-flex">restaurant</span>
+                                        Restaurants
+                                    </Link>
+                                </li>
+                                <li className="capitalize">
+                                    <Link href="/" className="hover:text-amber-500 flex items-center gap-1">
+                                        <span className="material-icons align-middle hidden md:inline-flex">local_cafe</span>
+                                        Cafe
+                                    </Link>
+                                </li>
+                                <li className="capitalize">
+                                    <Link href="/" className="hover:text-amber-500 flex items-center gap-1">
+                                        <span className="material-icons align-middle hidden md:inline-flex">fitness_center</span>
+                                        Gym
+                                    </Link>
+                                </li>
+                                <li className="capitalize">
+                                    <Link href="/" className="hover:text-amber-500 flex items-center gap-1">
+                                        <span className="material-icons align-middle hidden md:inline-flex">local_hospital</span>
+                                        Hospital
+                                    </Link>
+                                </li>
+                                <li className="capitalize">
+                                    <Link href="/" className="hover:text-amber-500 flex items-center gap-1">
+                                        <span className="material-icons align-middle hidden md:inline-flex">school</span>
+                                        School
+                                    </Link>
+                                </li>
+                                <li className="capitalize">
+                                    <Link href="/" className="hover:text-amber-500 flex items-center gap-1">
+                                        <span className="material-icons align-middle hidden md:inline-flex">shopping_cart</span>
+                                        Shopping
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
