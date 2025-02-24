@@ -11,7 +11,7 @@ const MainContent = () => {
             <div className="absolute inset-0 flex justify-center items-center text-white text-3xl">
                 <div className="flex min-h-full items-center justify-center">
                     <div>
-                        <div className="">
+                        <div className="text-white text-center mb-4">
                             <p className="text-4xl capitalize font-bold mb-4">
                                 Discover places that people love
                             </p>
@@ -20,29 +20,38 @@ const MainContent = () => {
                             </p>
                         </div>
 
-                        <div className="mt-6 flex flex-col gap-4">
+                        <div className="flex gap-5">
                             <div>
                                 <input
                                     type="text"
                                     placeholder="Location"
-                                    className="rounded-md w-80 bg-white text-gray-600 py-3 px-4 focus:outline-none focus:ring-2 focus:ring-amber-500"
+                                    className="rounded-md w-80 bg-white text-gray-600 py-2.5 px-6 focus:outline-none focus:ring-2 focus:ring-amber-500"
                                 />
                             </div>
                             <div>
                                 <input
                                     type="text"
                                     placeholder="I'm Looking for..."
-                                    className="rounded-md w-80 bg-white text-gray-600 py-3 px-4 focus:outline-none focus:ring-2 focus:ring-amber-500"
+                                    className="rounded-md w-80 bg-white text-gray-600 py-2.5 px-6 focus:outline-none focus:ring-2 focus:ring-amber-500"
                                 />
                             </div>
                             <div>
                                 <Button
                                     label="Search"
-                                    className="text-lg"
+                                    className="text-lg  py-2.5 px-6"
                                     variant="solid"
                                 />
                             </div>
                         </div>
+
+                        <div>
+                            <ul>
+                                <li>
+                                    <span className="material-icons align-middle hidden md:inline-flex">restaurant_menu</span>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>
