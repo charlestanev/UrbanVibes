@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "../ui/Button";
 
-const MainContent = () => {
+const Main = () => {
     return (
-        <section className="relative">
+        <main className="relative h-screen">
             <img src="images/cover-main-section.jpg" alt="Site Logo" className="w-full h-auto object-cover" />
             <div className="absolute inset-0 bg-black/50"></div>
             <div className="absolute inset-0 flex justify-center items-center text-white text-3xl">
@@ -91,9 +91,8 @@ const MainContent = () => {
                     </div>
                 </div>
             </div>
-        </section>
-
+        </main>
     );
 };
 
-export default MainContent;
+export default Main;

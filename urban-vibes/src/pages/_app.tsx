@@ -11,13 +11,7 @@ const nunito = Nunito({ subsets: ['latin'], weight: ['400', '700'] });
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className={`${comfortaa.className} ${nunito.className} ${lora.className} min-h-screen flex flex-col`}>
-      <div className="absolute right-0 left-0 z-10 text-white">
-        <Navbar />
-      </div>
-      <main className="bg-blue-400">
-        <Component {...pageProps} />
-      </main>
-      <Footer />
+      <Component {...pageProps} />
     </div>
   );
 }
